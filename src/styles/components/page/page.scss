@@ -1,0 +1,22 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+
+    &__level {
+        position: absolute;
+        left: 85px;
+    }
+
+    &__content {
+        margin: 0 auto;
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

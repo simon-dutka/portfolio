@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Navbar } from './components/index';
+import { Main } from './pages/index';
 
 function App() {
     return (
         <>
-            <Navbar />
+            <Main />
         </>
     );
 }

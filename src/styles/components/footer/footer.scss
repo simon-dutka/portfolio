@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0px 40px 35px 40px;
+
+    &__social {
+        display: flex;
+        column-gap: 16px;
+    }
+}
