@@ -1,10 +1,16 @@
 h1 {
-    font-weight: 800;
-    font-size: 53px;
-    line-height: 65px;
-
-    letter-spacing: 0.04em;
-
     color: $primary;
+    font-size: 53px;
+    font-weight: 800;
+    line-height: 65px;
+    letter-spacing: 0.04em;
     white-space: pre-line;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    text-align: center;
 }

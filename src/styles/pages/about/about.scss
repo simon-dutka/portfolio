@@ -1,0 +1,18 @@
+.about {
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.005em;
+        width: 50vw;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            column-gap: 40px;
+        }
+    }
+}

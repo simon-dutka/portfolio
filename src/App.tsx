@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Main } from './pages/index';
+import { Main, About } from './pages/index';
 
 function App() {
     return (
         <>
-            <Main />
+            {/* <Main /> */}
+            <About />
         </>
     );
 }
