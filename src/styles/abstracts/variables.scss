@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap');
+
+// Fonts
+$inter: 'Inter', sans-serif;
+$lato: 'Lato', sans-serif;
+
+// Colors
+$primary: #22282b;
+$white: #ffffff;
+
+// Gradients
+
+//RWD 450px, 800px, 1200px, 1400px
+$breakpoints: (
+    'sm': '28.125rem',
+    'md': '50rem',
+    'lg': '75rem',
+    'xl': '87.5rem',
+);

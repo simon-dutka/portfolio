@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 35px 145px 0 40px;
+
+    &__items {
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.005em;
+
+        &-container {
+            display: flex;
+            column-gap: 70px;
+        }
+    }
+}
