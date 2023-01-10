@@ -6,7 +6,8 @@
     height: 100vh;
 
     &__level {
-        position: absolute;
+        position: fixed;
+        top: 25%;
         left: 85px;
     }
 

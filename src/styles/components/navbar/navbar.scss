@@ -1,6 +1,11 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 90vw;
 
     margin: 35px 145px 0 40px;
 

@@ -1,7 +1,18 @@
 .main {
-    display: grid;
-    grid-template-rows: 75px 1fr 75px;
-    grid-template-columns: 120px 1fr 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__content {
+        display: grid;
+        grid-template-rows: 75px 1fr 75px;
+        grid-template-columns: 120px 1fr 120px;
+        align-items: center;
+        justify-items: center;
+
+        margin: 0 auto;
+    }
 
     &-top {
         grid-row: 1/2;

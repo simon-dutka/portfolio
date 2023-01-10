@@ -9,8 +9,8 @@ import rectangleLeft from '../../assets/rectangle_left.svg';
 import rectangleRight from '../../assets/rectangle_right.svg';
 
 const MainContent = () => (
-    <>
-        <div className='main'>
+    <div className='main'>
+        <div className='main__content'>
             <img src={rectangleLeft} alt='' className='main-top' />
 
             <h1 className='main-center'>
@@ -20,13 +20,14 @@ const MainContent = () => (
 
             <img src={rectangleRight} alt='' className='main-bottom' />
         </div>
-    </>
+    </div>
 );
 
 function Main() {
     return (
         <>
-            <Page level={level1} content={<MainContent />} />
+            {/* <Page level={level1} content={<MainContent />} /> */}
+            <MainContent />
         </>
     );
 }
