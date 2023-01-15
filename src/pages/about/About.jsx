@@ -30,13 +30,12 @@ const AboutContent = () => (
     </>
 );
 
-function Main() {
+function About() {
     return (
         <>
-            {/* <Page level={level2} content={<AboutContent />} /> */}
             <AboutContent />
         </>
     );
 }
 
-export default Main;
+export default About;

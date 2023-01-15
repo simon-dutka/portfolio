@@ -26,7 +26,6 @@ const MainContent = () => (
 function Main() {
     return (
         <>
-            {/* <Page level={level1} content={<MainContent />} /> */}
             <MainContent />
         </>
     );

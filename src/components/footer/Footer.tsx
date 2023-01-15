@@ -28,8 +28,8 @@ let socialContent: JSX.Element[] = [];
 
 socialData.forEach((el, id) => {
     socialContent.push(
-        <a href={el.href}>
-            <img src={el.icon} alt={el.altText} key={id} />
+        <a href={el.href} key={id}>
+            <img src={el.icon} alt={el.altText} />
         </a>
     );
 });
