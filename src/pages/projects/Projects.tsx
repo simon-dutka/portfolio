@@ -1,12 +1,16 @@
 import React from 'react';
 
+import '../../styles/pages/projects/projects.scss';
+
 let projectsContent: JSX.Element[] = [];
 
 let projectsData = [
     {
         title: 'Units Converter',
-        description: 'desc',
+        description:
+            'VS Code extenion used to convert unit to other type like px to rem',
         tags: 'Typescript',
+        link: '',
     },
 ];
 
@@ -25,7 +29,13 @@ projectsData.forEach((el) => {
 });
 
 function Projects() {
-    return <div className='projects'>{projectsContent}</div>;
+    return (
+        <div className='projects'>
+            <h2>Projects</h2>
+
+            <div className='projects__container'>{projectsContent}</div>
+        </div>
+    );
 }
 
 export default Projects;
