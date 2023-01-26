@@ -1,0 +1,19 @@
+@import '../../abstracts/variables.scss';
+
+.cv {
+    flex-direction: column;
+    padding-bottom: 15%;
+
+    &__button {
+        font-weight: 600;
+        font-size: 1.375rem;
+
+        padding: 4.5625rem 1rem;
+        border: 1px solid $primary;
+        border-radius: 2.5rem;
+        background: $white;
+
+        padding: 1rem 73px;
+        margin-top: 2.5rem;
+    }
+}

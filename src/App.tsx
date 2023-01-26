@@ -1,6 +1,6 @@
 import React from 'react';
 import { FullPage, Slide } from 'react-full-page';
-import { Main, About, Projects } from './pages/index';
+import { Main, About, Projects, Cv } from './pages/index';
 import { Page } from './components/index';
 
 function App() {
@@ -17,6 +17,10 @@ function App() {
 
                 <Slide>
                     <Projects />
+                </Slide>
+
+                <Slide>
+                    <Cv />
                 </Slide>
             </FullPage>
 
