@@ -11,9 +11,9 @@ import rectangleRight from '../../assets/rectangle_right.svg';
 const MainContent = () => (
     <div className='main'>
         <div className='main__content'>
-            <img src={rectangleLeft} alt='' className='main-top' />
+            <img src={rectangleLeft} alt='' className='main-left' />
 
-            <h1 className='main-center'>
+            <h1 className='main-text'>
                 Hello world, {'\n'}
                 I'm Simon
             </h1>

@@ -2,30 +2,86 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
 
     &__content {
         display: grid;
-        grid-template-rows: 75px 1fr 75px;
-        grid-template-columns: 120px 1fr 120px;
+        grid-template-rows: 4.6875rem 8.125rem 4.6875rem;
+        grid-template-columns: 7.5rem 20rem 7.5rem;
         align-items: center;
         justify-items: center;
+        position: relative;
 
         margin: 0 auto;
     }
 
-    &-top {
-        grid-row: 1/2;
-        grid-column: 1/2;
+    &-left {
+        position: relative;
+
+        animation: ease-in;
+        animation-name: open-left;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        transform: rotate(180deg);
     }
 
-    &-center {
+    &-text {
         grid-row: 2/3;
         grid-column: 2/3;
+        opacity: 0;
+
+        animation-delay: 600ms;
+        animation-name: show-text;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
     }
 
     &-bottom {
-        grid-row: 3/4;
-        grid-column: 3/4;
+        position: relative;
+        top: 9.375rem;
+        left: 2.5rem;
+
+        animation: ease-in;
+        animation-name: open-right;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes show-text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes open-left {
+    from {
+        top: 4.375rem;
+        left: 9.6875rem;
+    }
+
+    to {
+        transform: rotate(0);
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes open-right {
+    from {
+        top: 9.375rem;
+        left: 2.5rem;
+    }
+
+    to {
+        transform: rotate(0);
+        left: 12.5rem;
+        top: 11.25rem;
     }
 }
