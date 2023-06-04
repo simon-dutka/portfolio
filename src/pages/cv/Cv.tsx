@@ -6,9 +6,9 @@ function Cv() {
         <section className='cv content'>
             <h2>Checkout my cv</h2>
 
-            <button className='cv__button'>
-                <a href='/resume/resume.pdf'>PDF</a>
-            </button>
+            <a className='cv__button' href='/resume/resume.pdf'>
+                PDF
+            </a>
         </section>
     );
 }
