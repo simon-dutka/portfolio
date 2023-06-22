@@ -7,18 +7,39 @@
     left: 0;
     width: 90vw;
 
-    margin: 35px 145px 0 40px;
+    margin: 2.1875rem 9.0625rem 0 2.5rem;
 
     &__items {
         font-weight: 300;
-        font-size: 18px;
-        letter-spacing: 0.005em;
+        font-size: 1.125rem;
+        letter-spacing: 0.005rem;
 
         cursor: pointer;
 
         &-container {
             display: flex;
-            column-gap: 70px;
+            column-gap: 4.375rem;
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2rem;
+
+        height: 4rem;
+        width: 100vw;
+        border-radius: 1.625rem 1.625rem 0 0;
+        background: #22282b;
+
+        &-icon {
+            height: 1.5rem;
         }
     }
 }
