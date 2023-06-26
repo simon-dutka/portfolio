@@ -1,3 +1,6 @@
+@import '../../abstracts/mixins.scss';
+@import '../../abstracts/variables.scss';
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -8,6 +11,13 @@
     width: 90vw;
 
     margin: 0px 40px 35px 40px;
+
+    @include breakpointMax(md) {
+        top: 2.1875rem;
+        width: 80vw;
+
+        margin: 0 10vw 0 10vw;
+    }
 
     &__social {
         display: flex;
