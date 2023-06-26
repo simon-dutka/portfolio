@@ -1,3 +1,6 @@
+@import '../../abstracts/mixins.scss';
+@import '../../abstracts/variables.scss';
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,9 +39,15 @@
         height: 4rem;
         width: 100vw;
         border-radius: 1.625rem 1.625rem 0 0;
-        background: #22282b;
+        background: $primary;
+
+        @include breakpointMin(sm) {
+            column-gap: 2rem;
+        }
 
         &-icon {
+            cursor: pointer;
+
             height: 1.5rem;
         }
     }

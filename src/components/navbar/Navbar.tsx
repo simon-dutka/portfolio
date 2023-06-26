@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../../styles/components/navbar/navbar.scss';
-import { isMobile } from 'react-device-detect';
 
 // Images
 import sun from '../../assets/sun.svg';
@@ -28,23 +27,28 @@ function Navbar() {
     const iconsNavbar = [
         {
             src: about,
-            alt: 'item',
+            alt: 'about',
+            title: 'about',
         },
         {
             src: tech,
-            alt: 'item',
+            alt: 'tech',
+            title: 'tech',
         },
         {
             src: projects,
-            alt: 'item',
+            alt: 'projects',
+            title: 'projects',
         },
         {
             src: resume,
-            alt: 'item',
+            alt: 'resume',
+            title: 'resume',
         },
         {
             src: contact,
-            alt: 'item',
+            alt: 'contact',
+            title: 'contact',
         },
     ];
 
@@ -58,12 +62,13 @@ function Navbar() {
 
     return (
         <>
-            {resolution < 1000 ? (
+            {resolution <= 800 ? (
                 <nav className='navbar__bottom'>
                     {iconsNavbar.map((el, id) => (
                         <img
                             className='navbar__bottom-icon'
                             src={el.src}
+                            title={el.title}
                             alt={el.alt}
                             key={id}
                         />
