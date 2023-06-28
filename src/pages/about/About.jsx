@@ -6,11 +6,11 @@ import line from '../../assets/line.svg';
 
 function About() {
     return (
-        <div className='about content'>
+        <div className='about content about__content'>
             <h2 className='about__heading'>About me</h2>
 
             <div className='about__text-container'>
-                <img src={line} alt='' />
+                <img className='about__line' src={line} alt='' />
                 <p className='about__text'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Etiam porttitor tellus aliquet enim laoreet, a suscipit est

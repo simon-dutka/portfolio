@@ -1,6 +1,28 @@
+@import '../../abstracts/mixins.scss';
+@import '../../abstracts/variables.scss';
+
 .about {
+    &__content {
+        flex-direction: column;
+    }
+
     &__heading {
         margin-right: 2.5rem;
+
+        @include breakpointMax(md) {
+            margin: 2rem 0 0 0;
+        }
+
+        @include breakpointMax(sm) {
+            font-size: 2rem;
+            margin: 2rem 0 0 0;
+        }
+    }
+
+    &__line {
+        @include breakpointMax(md) {
+            display: none;
+        }
     }
 
     &__text {
@@ -11,12 +33,32 @@
         letter-spacing: 0.005em;
         width: 50vw;
 
+        @include breakpointMax(md) {
+            fontzise: 17px;
+            width: 70vw;
+        }
+
+        @include breakpointMax(sm) {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            width: 80vw;
+        }
+
         &-container {
             display: flex;
             align-items: center;
             justify-content: center;
 
             column-gap: 40px;
+            margin-top: 4.3rem;
+
+            @include breakpointMax(md) {
+                margin-top: 2.8rem;
+            }
+
+            @include breakpointMax(sm) {
+                margin-top: 2.8rem;
+            }
         }
     }
 }
