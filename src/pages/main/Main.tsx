@@ -1,10 +1,7 @@
 import React from 'react';
-
 import '../../styles/pages/main/main.scss';
 
-import { Page } from '../../components/index';
-
-import level1 from '../../assets/levels/level1.svg';
+// Images imports
 import rectangleLeft from '../../assets/rectangle_left.svg';
 import rectangleRight from '../../assets/rectangle_right.svg';
 
@@ -22,7 +19,6 @@ const MainContent = () => (
         </div>
     </div>
 );
-
 function Main() {
     return (
         <>

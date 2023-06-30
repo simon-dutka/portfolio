@@ -1,3 +1,6 @@
+@import '../../abstracts/mixins.scss';
+@import '../../abstracts/variables.scss';
+
 .main {
     display: flex;
     justify-content: center;
@@ -14,16 +17,36 @@
         position: relative;
 
         margin: 0 auto;
+
+        @include breakpointMax(md) {
+            grid-template-rows: 4.6875rem 8.125rem 4.6875rem;
+            grid-template-columns: 3rem 20rem 3rem;
+        }
+
+        @include breakpointMax(sm) {
+            grid-template-rows: 2rem 4rem 3rem;
+            grid-template-columns: 4.5rem 13rem 4.5rem;
+        }
     }
 
     &-left {
         position: relative;
 
         animation: ease-in;
-        animation-name: open-left;
+        animation-name: openLeft;
         animation-duration: 600ms;
         animation-fill-mode: forwards;
         transform: rotate(180deg);
+
+        @include breakpointMax(md) {
+            height: 4.5rem;
+            animation-name: openLeftMd;
+        }
+
+        @include breakpointMax(sm) {
+            height: 3.625rem;
+            animation-name: openLeftSm;
+        }
     }
 
     &-text {
@@ -35,6 +58,11 @@
         animation-name: show-text;
         animation-duration: 1000ms;
         animation-fill-mode: forwards;
+
+        @include breakpointMax(sm) {
+            font-size: 2rem;
+            line-height: 2.78125rem;
+        }
     }
 
     &-bottom {
@@ -43,10 +71,20 @@
         left: 2.5rem;
 
         animation: ease-in;
-        animation-name: open-right;
+        animation-name: openRight;
         animation-duration: 600ms;
         animation-fill-mode: forwards;
         transform: rotate(180deg);
+
+        @include breakpointMax(md) {
+            height: 4.5rem;
+            animation-name: openRightMd;
+        }
+
+        @include breakpointMax(sm) {
+            height: 3.625rem;
+            animation-name: openRightSm;
+        }
     }
 }
 
@@ -60,7 +98,7 @@
     }
 }
 
-@keyframes open-left {
+@keyframes openLeft {
     from {
         top: 4.375rem;
         left: 9.6875rem;
@@ -73,7 +111,33 @@
     }
 }
 
-@keyframes open-right {
+@keyframes openLeftMd {
+    from {
+        top: 4.375rem;
+        left: 9.6875rem;
+    }
+
+    to {
+        transform: rotate(0);
+        left: 0;
+        top: 1rem;
+    }
+}
+
+@keyframes openLeftSm {
+    from {
+        top: 1.3rem;
+        left: 6rem;
+    }
+
+    to {
+        transform: rotate(0);
+        left: 2rem;
+        top: 0;
+    }
+}
+
+@keyframes openRight {
     from {
         top: 9.375rem;
         left: 2.5rem;
@@ -83,5 +147,31 @@
         transform: rotate(0);
         left: 12.5rem;
         top: 11.25rem;
+    }
+}
+
+@keyframes openRightMd {
+    from {
+        top: 9.375rem;
+        left: 2.5rem;
+    }
+
+    to {
+        transform: rotate(0);
+        left: 10rem;
+        top: 11.25rem;
+    }
+}
+
+@keyframes openRightSm {
+    from {
+        top: 5rem;
+        left: 1.6rem;
+    }
+
+    to {
+        transform: rotate(0);
+        top: 6rem;
+        left: 5.8rem;
     }
 }
