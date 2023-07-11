@@ -1,2 +1,92 @@
+@import '../../abstracts/mixins.scss';
+@import '../../abstracts/variables.scss';
+
 .contact {
+    &__content {
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    &__heading {
+        @include breakpointMax(md) {
+            margin: 2rem 0 0 0;
+        }
+
+        @include breakpointMax(sm) {
+            font-size: 2rem;
+            margin: 2rem 0 0 0;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        width: 35.1875rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.75rem;
+
+        &-first-line {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1.87rem;
+        }
+
+        &-input {
+            color: $primary;
+            font-size: 1rem;
+            font-weight: 500;
+            font-family: $lato;
+            letter-spacing: 0.00469rem;
+
+            border-bottom: solid $primary 2px;
+            outline: none;
+            width: 15.625rem;
+
+            padding-bottom: 0.31rem;
+
+            &--short {
+                width: 6.675rem;
+            }
+        }
+
+        &-button {
+            color: $white;
+            text-align: justify;
+            font-family: $lato;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.00438rem;
+            cursor: pointer;
+
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.1875rem;
+            background: $primary;
+            width: 97px;
+            height: 33px;
+
+            margin-left: 0.44rem;
+
+            &-container {
+                display: flex;
+            }
+
+            &-image {
+                margin-top: 0.44rem;
+            }
+
+            &-outline {
+                height: 2.25rem;
+                width: 92px;
+                border: solid $primary 2px;
+                padding-top: 1rem;
+                padding-right: 2rem;
+            }
+        }
+    }
 }
