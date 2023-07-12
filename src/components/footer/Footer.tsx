@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/components/footer/footer.scss';
 
-// Images
+// Import images
 import github from '../../assets/github.svg';
 import email from '../../assets/email.svg';
 import linkedin from '../../assets/linkedin.svg';
@@ -29,7 +29,11 @@ let socialContent: JSX.Element[] = [];
 socialData.forEach((el, id) => {
     socialContent.push(
         <a href={el.href} key={id}>
-            <img src={el.icon} alt={el.altText} />
+            <img
+                className='footer__social-icon'
+                src={el.icon}
+                alt={el.altText}
+            />
         </a>
     );
 });
