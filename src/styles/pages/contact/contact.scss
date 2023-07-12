@@ -72,21 +72,32 @@
 
             margin-left: 0.44rem;
 
+            &:hover {
+                // animation-name: moveButton;
+                // animation: ease-in;
+                // animation-duration: 1000ms;
+
+                animation: ease-out;
+                animation-name: moveButton;
+                animation-duration: 150ms;
+                animation-fill-mode: forwards;
+            }
+
             &-container {
                 display: flex;
             }
 
             &-image {
+                margin-top: -0.1rem;
                 margin-top: 0.44rem;
             }
-
-            &-outline {
-                height: 2.25rem;
-                width: 92px;
-                border: solid $primary 2px;
-                padding-top: 1rem;
-                padding-right: 2rem;
-            }
         }
+    }
+}
+
+@keyframes moveButton {
+    to {
+        margin-top: 9px;
+        margin-left: 0;
     }
 }
