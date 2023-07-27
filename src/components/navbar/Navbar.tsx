@@ -14,11 +14,21 @@ import contact from '../../assets/navbar_icons/contact.svg';
 const NavbarContent = () => {
     return (
         <ul className='navbar__items-container'>
-            <li className='navbar__items'>About</li>
-            <li className='navbar__items'>Tech</li>
-            <li className='navbar__items'>Projects</li>
-            <li className='navbar__items'>Curriculum Vitae</li>
-            <li className='navbar__items'>Contact</li>
+            <li className='navbar__items'>
+                <a href='#about'>About</a>
+            </li>
+            <li className='navbar__items'>
+                <a href='#tech'>Tech</a>
+            </li>
+            <li className='navbar__items'>
+                <a href='#projects'>Projects</a>
+            </li>
+            <li className='navbar__items'>
+                <a href='#Resume'>Resume</a>
+            </li>
+            <li className='navbar__items'>
+                <a href='#contact'>Contact</a>
+            </li>
         </ul>
     );
 };
