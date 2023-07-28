@@ -2,6 +2,8 @@ import React from 'react';
 
 import '../../styles/pages/projects/projects.scss';
 
+import triangle from '../../assets/triangle.svg';
+import github from '../../assets/github.svg';
 let projectsContent: JSX.Element[] = [];
 
 let projectsData = [
@@ -10,7 +12,7 @@ let projectsData = [
         description:
             'VS Code extenion used to convert unit to other type like px to rem',
         tags: 'Typescript',
-        link: '',
+        link: 'item',
     },
 ];
 
@@ -19,9 +21,19 @@ projectsData.forEach((el) => {
         <div className='projects-item'>
             <p className='projects-item__title'>{el.title}</p>
             <p className='projects-item__description'>{el.description}</p>
+
             <div className='projets-item__bottom'>
                 <div className='projects-item__tag-container'>
-                    <div className='projects-item__tag'>{el.tags}</div>
+                    <div className='projects-item__tag-left'>
+                        <img
+                            className='projects-item__triangle'
+                            src={triangle}
+                            alt=''
+                        />
+                        <div className='projects-item__tag'>{el.tags}</div>
+                    </div>
+
+                    <img src={github} alt='link to project in github' />
                 </div>
             </div>
         </div>

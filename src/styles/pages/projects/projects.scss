@@ -42,5 +42,27 @@
 
             margin: 1.5rem 0 0.625rem 0;
         }
+
+        &__bottom {
+            display: flex;
+        }
+
+        &__tag {
+            &-left {
+                display: flex;
+                align-items: center;
+            }
+
+            &-container {
+                display: flex;
+                column-gap: 0.6875rem;
+                justify-content: space-between;
+            }
+        }
+
+        &__triangle {
+            height: 11px;
+            margin-right: 10px;
+        }
     }
 }
