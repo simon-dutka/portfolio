@@ -3,8 +3,14 @@
 
 .contact {
     &__content {
+        height: 100vh;
         flex-direction: column;
+
         row-gap: 2.5rem;
+
+        @include breakpointMax(md) {
+            height: 85vh;
+        }
     }
 
     &__heading {
@@ -20,7 +26,11 @@
 
     &__text {
         text-align: center;
-        width: 35.1875rem;
+        max-width: 35.1875rem;
+
+        @include breakpointMax(md) {
+            max-width: 75%;
+        }
     }
 
     &__form {
@@ -46,6 +56,10 @@
             width: 15.625rem;
 
             padding-bottom: 0.31rem;
+
+            @include breakpointMax(md) {
+                font-size: 0.95rem;
+            }
 
             &--short {
                 width: 6.675rem;
@@ -73,10 +87,6 @@
             margin-left: 0.44rem;
 
             &:hover {
-                // animation-name: moveButton;
-                // animation: ease-in;
-                // animation-duration: 1000ms;
-
                 animation: ease-out;
                 animation-name: moveButton;
                 animation-duration: 150ms;
