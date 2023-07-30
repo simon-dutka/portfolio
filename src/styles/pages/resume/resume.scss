@@ -3,7 +3,8 @@
 
 .resume {
     flex-direction: column;
-    padding-bottom: 15%;
+    align-items: center;
+    height: 94vh;
 
     &__button {
         font-size: 1.375rem;
