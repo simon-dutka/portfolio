@@ -33,7 +33,11 @@ projectsData.forEach((el) => {
                         <div className='projects-item__tag'>{el.tags}</div>
                     </div>
 
-                    <img src={github} alt='link to project in github' />
+                    <img
+                        className='projects-item__icon'
+                        src={github}
+                        alt='link to project in github'
+                    />
                 </div>
             </div>
         </div>
