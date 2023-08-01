@@ -15,6 +15,9 @@ const NavbarContent = () => {
     return (
         <ul className='navbar__items-container'>
             <li className='navbar__items'>
+                <a href='#home'>Home</a>
+            </li>
+            <li className='navbar__items'>
                 <a href='#about'>About</a>
             </li>
             <li className='navbar__items'>
@@ -24,7 +27,7 @@ const NavbarContent = () => {
                 <a href='#projects'>Projects</a>
             </li>
             <li className='navbar__items'>
-                <a href='#Resume'>Resume</a>
+                <a href='#resume'>Resume</a>
             </li>
             <li className='navbar__items'>
                 <a href='#contact'>Contact</a>

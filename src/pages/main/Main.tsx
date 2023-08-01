@@ -6,7 +6,7 @@ import rectangleLeft from '../../assets/rectangle_left.svg';
 import rectangleRight from '../../assets/rectangle_right.svg';
 
 const MainContent = () => (
-    <div className='main'>
+    <div id='home' className='main'>
         <div className='main__content'>
             <img src={rectangleLeft} alt='' className='main-left' />
 

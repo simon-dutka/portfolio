@@ -46,7 +46,7 @@ projectsData.forEach((el) => {
 
 function Projects() {
     return (
-        <div className='projects'>
+        <div id='projects' className='projects'>
             <h2>Projects</h2>
 
             <div className='projects__container'>{projectsContent}</div>

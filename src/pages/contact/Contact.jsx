@@ -6,6 +6,7 @@ import outline from '../../assets/outline.svg';
 function Contact() {
     return (
         <section className='contact content contact__content'>
+        <section id='contact' className='contact content contact__content'>
             <h2 className='contact__heading'>Contact</h2>
 
             <p className='contact__text'>

@@ -3,7 +3,7 @@ import '../../styles/pages/resume/resume.scss';
 
 function Resume() {
     return (
-        <section className='resume content'>
+        <section id='resume' className='resume content'>
             <h2>Checkout my resume</h2>
 
             <a className='resume__button' href='/resume/resume.pdf'>
